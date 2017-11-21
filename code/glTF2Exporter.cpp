@@ -999,6 +999,7 @@ void glTF2Exporter::ExportAnimations()
                 tmpAnimSampler.input = "TIME";
                 tmpAnimSampler.interpolation = "LINEAR";
 
+                animRef->name = name;
                 animRef->Channels.push_back(tmpAnimChannel);
                 animRef->Samplers.push_back(tmpAnimSampler);
             }
